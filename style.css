@@ -1,0 +1,143 @@
+/* Given by Frontend mentor */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* end */
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.spacing {
+    letter-spacing: 0.5em;
+    margin: 0;
+}
+
+.button {
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.fancy-text {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.price {
+    width: 50%;
+    margin: auto;
+}
+
+.now {
+    font-size: 2em;
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.discount {
+    font-family: "Montserrat", serif;
+    text-align: center;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+/* layout */
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    max-width: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 4%;
+}
+
+.leftcolumn {
+    background-size: cover;
+    background-position: center;
+}
+
+
+.rightcolumn {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 376px){
+    .card {
+        width: 50%;
+        height: 50%;
+        min-width: 450px;
+    }
+    .leftcolumn {
+        background-image: url("images/image-product-desktop.jpg");
+        width: 50%;
+        height: 100%;
+    }
+    .rightcolumn {
+        width: 50%;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 375px){
+    .card {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .leftcolumn {
+        background-image: url("images/image-product-mobile.jpg");
+        height: 200px;
+        object-fit: cover;
+    }
+    .rightcolumn {
+        height: fit-content;
+    }
+}
