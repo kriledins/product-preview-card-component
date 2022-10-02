@@ -83,7 +83,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: white;
-    border-radius: 4%;
+    border-radius: 20px;
 }
 
 .leftcolumn {
