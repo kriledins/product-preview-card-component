@@ -1,6 +1,12 @@
 body {
     background-color: hsl(30, 38%, 92%);
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .text {
@@ -73,11 +79,6 @@ body {
 /* layout */
 
 .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     max-width: 540px;
     overflow: hidden;
     display: flex;
