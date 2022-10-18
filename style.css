@@ -1,5 +1,13 @@
+:root {
+    --darkGreyishBlue: hsl(228, 12%, 48%);
+    --darkCyan: hsl(158, 36%, 37%);
+    --Cyan: hsl(158, 36%, 25%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+}
+
 body {
-    background-color: hsl(30, 38%, 92%);
+    background-color: var(--cream);
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -13,7 +21,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 0.9em;
-    color: hsl(228, 12%, 48%);
+    color: var(--darkGreyishBlue);
     line-height: 1.5em;
     margin-bottom: 20px;
 }
@@ -37,7 +45,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    background-color: hsl(158, 36%, 37%);
+    background-color: var(--darkCyan);
 }
 
 .button:before {
@@ -46,13 +54,13 @@ body {
 
 .button:hover {
     cursor: pointer;
-    background-color: hsl(158, 36%, 25%);
+    background-color: var(--Cyan);
 }
 
 .fancy-text {
     font-family: "Fraunces", serif;
     font-weight: 700;
-    color: hsl(212, 21%, 14%);
+    color: var(--veryDarkBlue);
     font-size: 2em;
     line-height: 1em;
     margin-bottom: 10px;
@@ -66,14 +74,14 @@ body {
 .now {
     font-size: 2em;
     font-family: "Fraunces", serif;
-    color: hsl(158, 36%, 37%);
+    color: var(--darkCyan);
 }
 
 .discount {
     font-family: "Montserrat", serif;
     text-align: center;
     text-decoration: line-through;
-    color: hsl(228, 12%, 48%);
+    color: var(--darkGreyishBlue);
 }
 
 /* layout */
