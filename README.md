@@ -6,4 +6,4 @@
 
 Thanks for checking out this front-end coding challenge.
 
-[Preview site](https://kriledins.github.io/product-preview-card-component/)
+[View and test live sitee](https://kriledins.github.io/product-preview-card-component/)
